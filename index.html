@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Git & GitHub Cheat Sheet | Ultimate Guide for Developers</title>
+
+    <meta name="description"
+        content="Essential Git and GitHub commands for professional developers. Master version control with our interactive and premium cheat sheet.">
+    <meta name="keywords" content="Git, GitHub, Cheat Sheet, Developer Tools, Programming, Version Control">
+    <meta name="author" content="Vini">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Git & GitHub Cheat Sheet | Ultimate Guide">
+    <meta property="og:description"
+        content="Master Git and GitHub with style. Premium interactive commands guide for developers.">
+    <meta property="og:image" content="https://your-domain.com/assets/og-image.png">
+
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Git & GitHub Cheat Sheet">
+    <meta property="twitter:description"
+        content="Master Git and GitHub with style. Premium interactive commands guide for developers.">
+
+    <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div id="preloader" class="preloader" aria-busy="true" aria-label="Loading experience">
+        <div class="preloader-center">
+
+            <div class="preloader-logos">
+                <div class="loader-icon-container">
+                    <span class="iconify" data-icon="simple-icons:git" style="color: #F97316;"
+                        aria-hidden="true"></span>
+                </div>
+                <div class="loader-icon-container" style="animation-delay: 0.2s">
+                    <span class="iconify" data-icon="simple-icons:github" style="color: white;"
+                        aria-hidden="true"></span>
+                </div>
+            </div>
+
+            <div class="preloader-text-stack">
+                <div class="preloader-text-line">
+                    <h2 class="preloader-text preloader-text--git">
+                        GIT <span class="muted">&amp;</span>
+                    </h2>
+                </div>
+                <div class="preloader-text-line">
+                    <h2 class="preloader-text preloader-text--github">
+                        GITHUB
+                    </h2>
+                </div>
+            </div>
+
+            <div class="loading-bar-track" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+                <div class="loading-bar-fill"></div>
+            </div>
+        </div>
+
+        <div class="preloader-glow"></div>
+    </div>
+
+    <div class="bg-grid"></div>
+    <div class="bg-aura"></div>
+
+    <section id="hero" class="hero">
+        <div class="hero-badge animate-on-scroll">
+            <span class="hero-badge-dot">
+                <span class="hero-badge-dot-ping"></span>
+                <span class="hero-badge-dot-solid"></span>
+            </span>
+            Made by Vini
+        </div>
+        <h1 class="hero-title animate-on-scroll">
+            GIT &amp; GITHUB <br /> <span class="muted">CHEAT</span> SHEET
+        </h1>
+        <p class="hero-description animate-on-scroll">
+            Essential Git and GitHub commands for professional developers.
+        </p>
+    </section>
+
+    <section class="foundation">
+        <div class="foundation-grid">
+            <div class="foundation-beam">
+                <div class="foundation-beam-inner"></div>
+            </div>
+
+            <div class="foundation-item animate-on-scroll">
+                <div class="foundation-header">
+                    <div class="foundation-icon-box">
+                        <span class="iconify" data-icon="simple-icons:git" style="color: #F97316;"
+                            aria-hidden="true"></span>
+                    </div>
+                    <h2 class="foundation-title">GIT <span class="muted">/ Engine</span></h2>
+                </div>
+                <p class="foundation-text">
+                    <strong>Git is the technology.</strong> It is a version control
+                    software, which
+                    means it helps you manage and track changes in your files over time. When you're building a project,
+                    you constantly
+                    edit, delete, and add code. Git records those changes in &ldquo;commits,&rdquo; which are like saved
+                    checkpoints. If you make a
+                    mistake, you can go back to an earlier version of your project instead of starting over. You can
+                    download Git directly
+                    on your computer and it works locally, not requiring the internet. Git lets you create branches,
+                    which are separate versions of your project where you can test new ideas safely. Later, you can
+                    merge
+                    those changes back into your main project.
+                </p>
+            </div>
+
+            <div class="foundation-item animate-on-scroll" style="transition-delay: 150ms;">
+                <div class="foundation-header">
+                    <div class="foundation-icon-box foundation-icon-box--github">
+                        <span class="iconify" data-icon="simple-icons:github" style="color: white;"
+                            aria-hidden="true"></span>
+                    </div>
+                    <h2 class="foundation-title">GITHUB <span class="muted">/ Vault</span></h2>
+                </div>
+                <p class="foundation-text">
+                    <strong>GitHub is the platform.</strong> It is an online platform
+                    that hosts Git
+                    repositories in the cloud. While Git works locally on your computer to track changes and manage
+                    versions of your code,
+                    GitHub allows you to store those Git projects online so you can access them from anywhere and
+                    collaborate with others.
+                    With GitHub, you can push your local Git commits to a remote repository, share your code, work with
+                    teammates, review changes,
+                    and manage projects. It adds collaboration features like pull requests, issue tracking, and project
+                    boards, but underneath it all,
+                    it uses Git to handle the version control.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <main class="categories">
+        <div class="categories-grid">
+
+            <section id="setup" class="animate-on-scroll" aria-labelledby="title-setup">
+                <div class="glass-card card-wrapper">
+                    <div class="beam-border-v"></div>
+                    <div class="card-header">
+                        <h2 id="title-setup" class="card-title">Setup &amp; Config</h2>
+                    </div>
+
+                    <div class="card-body">
+                        <div>
+                            <div class="topic-row">
+                                <h3 class="topic-title">Global Identity</h3>
+                                <button onclick="openTopicDetails('identity')" class="btn-learn-more"
+                                    aria-label="Learn more about Global Identity">
+                                    <span class="iconify" data-icon="solar:maximize-linear" aria-hidden="true"></span>
+                                </button>
+                            </div>
+                            <div class="code-block">git config --global user.name "Vini"</div>
+                            <div class="code-block">git config --global user.email "vini@dev.com"</div>
+                            <div class="code-block">git config --list</div>
+                        </div>
+                        <div class="topic-divider">
+                            <div class="topic-row">
+                                <h3 class="topic-title">New Repository</h3>
+                                <button onclick="openTopicDetails('new_repo')" class="btn-learn-more"
+                                    aria-label="Learn more about New Repository">
+                                    <span class="iconify" data-icon="solar:maximize-linear" aria-hidden="true"></span>
+                                </button>
+                            </div>
+                            <div class="code-block">git init</div>
+                            <div class="code-block">git clone [url]</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="workflow" class="animate-on-scroll" style="transition-delay: 100ms;"
+                aria-labelledby="title-workflow">
+                <div class="glass-card card-wrapper">
+                    <div class="beam-border-v"></div>
+                    <div class="card-header">
+                        <h2 id="title-workflow" class="card-title">Daily Workflow</h2>
+                    </div>
+
+                    <div class="card-body">
+                        <div>
+                            <div class="topic-row">
+                                <h3 class="topic-title">Saving Changes</h3>
+                                <button onclick="openTopicDetails('saving')" class="btn-learn-more"
+                                    aria-label="Learn more about Saving Changes">
+                                    <span class="iconify" data-icon="solar:maximize-linear" aria-hidden="true"></span>
+                                </button>
+                            </div>
+                            <div class="code-block">git add .</div>
+                            <div class="code-block">git add [file]</div>
+                            <div class="code-block">git commit -m "feat: login"</div>
+                            <div class="code-block">git commit --amend</div>
+                        </div>
+                        <div class="topic-divider">
+                            <div class="topic-row">
+                                <h3 class="topic-title">Monitoring</h3>
+                                <button onclick="openTopicDetails('monitoring')" class="btn-learn-more"
+                                    aria-label="Learn more about Monitoring">
+                                    <span class="iconify" data-icon="solar:maximize-linear" aria-hidden="true"></span>
+                                </button>
+                            </div>
+                            <div class="code-block">git status</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="remote" class="animate-on-scroll" style="transition-delay: 200ms;"
+                aria-labelledby="title-remote">
+                <div class="glass-card card-wrapper">
+                    <div class="beam-border-v"></div>
+                    <div class="card-header">
+                        <h2 id="title-remote" class="card-title">Remote Sync</h2>
+                    </div>
+
+                    <div class="card-body">
+                        <div>
+                            <div class="topic-row">
+                                <h3 class="topic-title">Synchronization</h3>
+                                <button onclick="openTopicDetails('sync')" class="btn-learn-more"
+                                    aria-label="Learn more about Synchronization">
+                                    <span class="iconify" data-icon="solar:maximize-linear" aria-hidden="true"></span>
+                                </button>
+                            </div>
+                            <div class="code-block">git push origin [branch]</div>
+                            <div class="code-block">git pull origin [branch]</div>
+                            <div class="code-block">git fetch</div>
+                        </div>
+                        <div class="topic-divider">
+                            <div class="topic-row">
+                                <h3 class="topic-title">Remote Management</h3>
+                                <button onclick="openTopicDetails('remote_mgmt')" class="btn-learn-more"
+                                    aria-label="Learn more about Remote Management">
+                                    <span class="iconify" data-icon="solar:maximize-linear" aria-hidden="true"></span>
+                                </button>
+                            </div>
+                            <div class="code-block">git remote add origin [url]</div>
+                            <div class="code-block">git remote -v</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="branch" class="animate-on-scroll" aria-labelledby="title-branch">
+                <div class="glass-card card-wrapper">
+                    <div class="beam-border-v"></div>
+                    <div class="card-header">
+                        <h2 id="title-branch" class="card-title">Branch Flow</h2>
+                    </div>
+
+                    <div class="card-body">
+                        <div>
+                            <div class="topic-row">
+                                <h3 class="topic-title">Branching</h3>
+                                <button onclick="openTopicDetails('branching')" class="btn-learn-more"
+                                    aria-label="Learn more about Branching">
+                                    <span class="iconify" data-icon="solar:maximize-linear" aria-hidden="true"></span>
+                                </button>
+                            </div>
+                            <div class="code-block">git checkout -b feature-name</div>
+                            <div class="code-block">git switch [branch]</div>
+                            <div class="code-block">git branch</div>
+                            <div class="code-block">git branch -d [name]</div>
+                        </div>
+                        <div class="topic-divider">
+                            <div class="topic-row">
+                                <h3 class="topic-title">Integration</h3>
+                                <button onclick="openTopicDetails('merge')" class="btn-learn-more"
+                                    aria-label="Learn more about Integration">
+                                    <span class="iconify" data-icon="solar:maximize-linear" aria-hidden="true"></span>
+                                </button>
+                            </div>
+                            <div class="code-block">git merge [branch]</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="inspect" class="animate-on-scroll" style="transition-delay: 100ms;"
+                aria-labelledby="title-inspect">
+                <div class="glass-card card-wrapper">
+                    <div class="beam-border-v"></div>
+                    <div class="card-header">
+                        <h2 id="title-inspect" class="card-title">Inspection</h2>
+                    </div>
+
+                    <div class="card-body">
+                        <div>
+                            <div class="topic-row">
+                                <h3 class="topic-title">History</h3>
+                                <button onclick="openTopicDetails('history')" class="btn-learn-more"
+                                    aria-label="Learn more about History">
+                                    <span class="iconify" data-icon="solar:maximize-linear" aria-hidden="true"></span>
+                                </button>
+                            </div>
+                            <div class="code-block">git log --oneline --graph</div>
+                            <div class="code-block">git log -n 5</div>
+                        </div>
+                        <div class="topic-divider">
+                            <div class="topic-row">
+                                <h3 class="topic-title">Differences</h3>
+                                <button onclick="openTopicDetails('diff')" class="btn-learn-more"
+                                    aria-label="Learn more about Differences">
+                                    <span class="iconify" data-icon="solar:maximize-linear" aria-hidden="true"></span>
+                                </button>
+                            </div>
+                            <div class="code-block">git diff</div>
+                            <div class="code-block">git diff --staged</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="undo" class="animate-on-scroll" style="transition-delay: 200ms;" aria-labelledby="title-undo">
+                <div class="glass-card card-wrapper card-wrapper--danger">
+                    <div class="beam-border-v"></div>
+                    <div class="card-header">
+                        <h2 id="title-undo" class="card-title">Recovery</h2>
+                    </div>
+
+                    <div class="card-body">
+                        <div>
+                            <div class="topic-row">
+                                <h3 class="topic-title">Undo Commits</h3>
+                                <button onclick="openTopicDetails('undo')" class="btn-learn-more btn-learn-more--danger"
+                                    aria-label="Learn more about Undo Commits">
+                                    <span class="iconify" data-icon="solar:maximize-linear" aria-hidden="true"></span>
+                                </button>
+                            </div>
+                            <div class="code-block">git reset --soft HEAD~1</div>
+                            <div class="code-block code-block--danger">git reset --hard HEAD</div>
+                            <div class="code-block">git checkout -- [file]</div>
+                        </div>
+                        <div class="topic-divider">
+                            <div class="topic-row">
+                                <h3 class="topic-title">Stash</h3>
+                                <button onclick="openTopicDetails('stash')" class="btn-learn-more"
+                                    aria-label="Learn more about Stash">
+                                    <span class="iconify" data-icon="solar:maximize-linear" aria-hidden="true"></span>
+                                </button>
+                            </div>
+                            <div class="code-block">git stash</div>
+                            <div class="code-block">git stash pop</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <div id="category-modal" class="modal-overlay" aria-modal="true" role="dialog">
+        <div class="modal-backdrop" onclick="closeModal()"></div>
+
+        <div class="modal-box">
+            <button onclick="closeModal()" class="modal-close-btn" aria-label="Close modal">
+                <span class="iconify" data-icon="solar:close-circle-bold" aria-hidden="true"></span>
+            </button>
+            <div id="modal-inner-content" class="modal-inner">
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js" defer></script>
+</body>
+
+</html>
